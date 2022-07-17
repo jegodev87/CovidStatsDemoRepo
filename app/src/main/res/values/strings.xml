@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Covid Stats</string>
+    <string name="no_internet_hint">Looks like your are not connected to internet.\nPlease try reconnecting your internet</string>
+    <string name="fetchig_data">Fetching data from server. Please wait....</string>
+</resources>

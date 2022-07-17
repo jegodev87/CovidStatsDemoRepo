@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_1a2e46"
+    android:padding="16dp">
+
+    <TextView
+        android:text="test"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/district_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/active_cases"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/active_cases"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/confirmed_cases"
+        app:layout_constraintTop_toBottomOf="@+id/district_name" />
+
+    <TextView
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/confirmed_cases"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/recovered_cases"
+        app:layout_constraintTop_toBottomOf="@+id/active_cases" />
+
+
+    <TextView
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/recovered_cases"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/deceased_cases"
+        app:layout_constraintTop_toBottomOf="@+id/confirmed_cases" />
+
+
+    <TextView
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/deceased_cases"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/delta"
+        app:layout_constraintTop_toBottomOf="@+id/recovered_cases" />
+
+
+    <TextView
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/delta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/delta_confirmed"
+        app:layout_constraintTop_toBottomOf="@+id/deceased_cases" />
+
+
+    <TextView
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/delta_confirmed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/delta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
